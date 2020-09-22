@@ -1,0 +1,46 @@
+---
+title: Techncolor
+---
+
+<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable"><strong><i>Technicolor</i></strong></h2>
+		<p class="subtext editable">
+			<strong>原创意编程俱乐部，北大附中中心社团</strong><br>
+
+		</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/portfolio/">了解更多！</a></p>
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">我们的成就</h3>
+			<p class="editable">目前我还不知道写啥好，你们做出来项目给我说啊</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">查看我们更多的成就 &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/technicolor-logo.png" width="250" style="margin-bottom: 40px;"></li>
+				<li><img src="{{ site.baseurl }}/images/chuangyibiancheng-logo.png" width="300"></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">我们是谁</h3>
+			<p class="editable">Technicolor俱乐部的前身是创意编程俱乐部。2020年秋季，俱乐部学习项目全新改版。改版后的俱乐部一如既往的引导和启发同学观察生活、开发实用的程序、为生活服务，并新增各类软硬件项目的编程。<br>如果你，热爱技术，关注技术点亮生活，愿意和伙伴合作，一起学习和改变生活，期待通过努力赢得成长和荣誉，那就加入我们吧！</p>
+		</div>
+	</div>
+</section>

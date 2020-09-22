@@ -1,0 +1,30 @@
+- title: 页面
+  links:
+    - name: 主页
+      link: /
+    - name: 项目
+      link: /portfolio/
+    - name: 消息
+      link: /blog/
+    - name: 我们的社员
+      link: /about/
+#    - name: 联系我们
+#      link: /contact/
+- title: 友情链接
+  links:
+    - name: 北大附中
+      link: http://www.pkuschool.edu.cn/
+      social_icon: Facebook
+      new_window: true
+    - name: subIT
+      link: https://pkuschool.github.io/SubIT/
+      social_icon: Twitter
+      new_window: true
+    - name: 语雀
+      link: https://www.yuque.com/
+      social_icon: Instagram
+      new_window: true
+    - name: Github
+      link: https://github.com/bdfztechnicolor
+      social_icon: LinkedIn
+      new_window: true
