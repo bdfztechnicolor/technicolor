@@ -1,0 +1,38 @@
+<!-- Services -->
+  <section class="page-section" id="{{ site.data.sitetext[site.locale].services.section | default: "services" }}">
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].services.title | default: "Services" }}</h2>
+          
+          {% if site.data.sitetext[site.locale].services.text %}
+		  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].services.text }}</h3>
+      
+		  {% endif %}
+        </div>
+      </div>
+	  
+      <div class="row text-center">
+        <p style="width:80%;margin:0 auto;margin-bottom:1rem">
+        TechniColor俱乐部，课程名称创意编程俱乐部，前身是 APP设计与开发俱乐部，2020年9月俱乐部全新改版，同学实践主要使用Python编程语言，新增各类实践项目,新增英文名 “TechniColor”。俱乐部一如既往的引导和启发同学：</p><br />      
+      </p>
+      <p style="width:100%;margin:0 auto;margin-bottom:1rem">• 观察生活 <br />    
+        • 开发实用程序  <br />     
+        • 用技术点亮生活</p>
+        <h4 style="width:100%;margin-bottom:1rem">俱乐部的长期目标</h4>
+	  {% for service in site.data.sitetext[site.locale].services.list %}
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="{{ service.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">{{ service.title | markdownify }}</h4>
+          {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
+        </div>
+	  {% endfor %}
+      </div>
+	  
+    </div>
+  </section>
+<!-- End Services -->

@@ -1,9 +1,54 @@
-links:
-- name: 项目
-  link: /portfolio/
-- name: 消息
-  link: /blog/
-- name: 我们的社员
-  link: /about/
-- name: 联系我们
-  link: /contact/
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  nav:
+    - title: "课程介绍"
+      section: services
+    - title: "成果展示"
+      section: portfolio
+    - title: "教师介绍"
+      section: timeline
+    - title: "我们的团队"
+      section: team
+    - title: "联系我们"
+      section: contact
+    # - title: "Theme Source"
+    #   url: https://github.com/raviriley/agency-jekyll-theme/
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  nav:
+    - title: "Servicios"
+      section: servicios
+    - title: "Portafolio"
+      section: portafolio
+    - title: "Cronología"
+      section: cronologia
+    - title: "Equipo"
+      section: equipo
+    - title: "Contáctenos"
+      section: contacto
+    - title: "Fuente de la plantilla"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES

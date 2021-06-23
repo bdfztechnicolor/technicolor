@@ -1,0 +1,73 @@
+<!-- About -->
+  <section class="page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "about" }}" style="text-align:center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].timeline.title | markdownify | default: "About" }}</h2>
+          <!-- <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].timeline.text | default: "timeline"}}</h3> -->
+        </div>
+      </div>
+      <div class="row">
+        
+        
+        <div class="col-lg-12">
+          <h2>教育及工作背景</h2>
+          <br />
+          <img src="https://z3.ax1x.com/2021/05/17/gRBhhn.jpg" alt="ReadMe 2寸.jpg" style="width:30%">
+          <p>本科就读于北京师范大学 <br />研究生就读于 北京邮电大学 <br />2001年至今任北大附中信息技术教师<br />曾担任初高中信息技术教师，讲授多门国家课程以及信息技术文化、多媒体开发、程序设计、手机开发、创意编程等多门课程。<br /></p>
+          <h2>部分获奖情况</h2>
+          <p>北大附中优秀教师<br />北京市新课程教师基本功展示活动一等奖<br />全国义务教育信息技术优质课展评二等奖<br />指导学生获得全国中小学生电脑作品大赛二等奖<br />指导学生获得App Inventor应用开发全国中学生挑战赛高中组组二等奖<br /></p>
+          <h2>校内授课信息</h2>
+          <p>创意编程俱乐部 主教练</p>
+          
+          <!-- <ul class="timeline">
+            
+            
+      {%- assign align = site.data.sitetext[site.locale].timeline.start_align -%}
+      {%- for event in site.data.sitetext[site.locale].timeline.events -%}
+            {%- if align == "right" -%}
+              {%- if event.align and event.align == "left" -%}
+                {%- assign align = "right" -%}
+                <li>
+              {%- else -%}
+                {%- assign align = "left" %}
+                <li class="timeline-inverted">
+              {% endif %}
+            {% else %}
+              {%- if event.align and event.align == "right" -%}
+                {%- assign align = "left" -%}
+                <li class="timeline-inverted">
+              {%- else -%}
+                {%- assign align = "right" %}
+                <li>
+              {% endif %}
+            {%- endif -%}
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ event.year | markdownify }}</h4>
+                  <h4 class="subheading">{{ event.title }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="text-muted">{{ event.desc | markdownify }}</div>
+                </div>
+              </div>
+            </li>
+		  {% endfor %}	
+            
+		  {% if site.data.sitetext[site.locale].timeline.end %}	
+			<li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>{{ site.data.sitetext[site.locale].timeline.end }}</h4>
+              </div>
+            </li>
+		  {% endif %}
+
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End About -->
