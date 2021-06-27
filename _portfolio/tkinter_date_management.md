@@ -22,7 +22,7 @@ alt: image alt text
 在开始敲代码之前，我们需要先看一下自己需要做什么。为了更好地整理思路，我选择使用思维导图的方式。
 
 
-![mindmap.png](https://cdn.nlark.com/yuque/0/2021/png/2449487/1610078899078-91bc983d-f627-4e7b-8c41-b9481051b4df.png#align=left&display=inline&height=1184&margin=%5Bobject%20Object%5D&name=mindmap.png&originHeight=1184&originWidth=1978&size=184282&status=done&style=none&width=1978)
+![mindmap.png](https://cdn.nlark.com/yuque/0/2021/png/2449487/1610078899078-91bc983d-f627-4e7b-8c41-b9481051b4df.png)
 
 
 **在确定好我们需要做什么之后，就可以着手学习敲代码了！**
@@ -57,6 +57,7 @@ window.mainloop()
 先导入tkinter库，然后创建一个window实例。
 **运行效果：**
 ![3-1.png](https://cdn.nlark.com/yuque/0/2021/png/2449487/1610078912946-49572a4f-6fc7-42cd-a9fa-82df791e787f.png#align=left&display=inline&height=970&margin=%5Bobject%20Object%5D&name=3-1.png&originHeight=970&originWidth=1806&size=57360&status=done&style=none&width=1806)
+
 ### 2.按功能分为两个页面
 ```python
 #导入库
