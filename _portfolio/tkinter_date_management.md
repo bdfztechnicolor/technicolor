@@ -13,6 +13,18 @@ alt: image alt text
 ---
 
 
+[comment]: <> (<script>)
+
+[comment]: <> (	document.addEventListener&#40;'DOMContentLoaded', function &#40;&#41; {)
+
+[comment]: <> (	    const elems = document.querySelectorAll&#40;'img'&#41;;)
+
+[comment]: <> (	    elems.style.width = "100px";)
+
+[comment]: <> (    }&#41;)
+
+[comment]: <> (</script>)
+
 ## 一、项目准备
 **说明！必看！**
 **这篇文章是TechniColor俱乐部高级组的项目教程，是对项目的一个总结也帮助以后的同学学习**
@@ -21,8 +33,9 @@ alt: image alt text
 日程管理是每个人都需要做的事情，不论是用好脑子还是用烂笔头抑或是程序都可以实现。程序的优点在于它很清晰同时也易于进行统计，还可以锻炼下写python的能力，~~这才是主要目的~~。
 在开始敲代码之前，我们需要先看一下自己需要做什么。为了更好地整理思路，我选择使用思维导图的方式。
 
+![mindmap.png](https://z3.ax1x.com/2021/06/27/RYF7t0.png)
 
-![mindmap.png](https://cdn.nlark.com/yuque/0/2021/png/2449487/1610078899078-91bc983d-f627-4e7b-8c41-b9481051b4df.png)
+[comment]: <> (<img src="https://z3.ax1x.com/2021/06/27/RYF7t0.png" style="width:100%">)
 
 
 **在确定好我们需要做什么之后，就可以着手学习敲代码了！**
